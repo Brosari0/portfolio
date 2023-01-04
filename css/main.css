@@ -34,7 +34,6 @@ main {
   background-size: cover;
   width: 93vw;
   height: 100vh;
-  padding: 10vmin;
 }
 
 h1 {
@@ -49,11 +48,8 @@ h1 {
   text-align: left;
 }
 
-#intro {
-  padding: 10vmin;
-}
-
 .intro {
+  padding: 10vmin;
   line-height: 1;
 }
 
@@ -74,6 +70,14 @@ h1 .name {
 
 .and {
   font-size: 60%;
+}
+
+img {
+  position: absolute;
+  height: 60vh;
+  width: auto;
+  left: 0;
+  top: 40vh;
 }
 
 /* NAVBAR */
