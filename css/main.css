@@ -4,7 +4,7 @@ html {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  background-color: #666;
+  background-color: #0c1113;
 }
 
 body {
@@ -17,16 +17,15 @@ body {
 
 main {
   scroll-snap-type: y mandatory;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: auto;
 }
 
-#title, #skills, #projects, #contact, #about-me {
+[id] {
   scroll-snap-align: start;
   scroll-margin: 0;
   height: 100vh;
   width: 100vw;
-}
+} 
 
 /* HERO */
 
@@ -35,6 +34,7 @@ main {
   background-size: cover;
   width: 93vw;
   height: 100vh;
+  padding: 10vmin;
 }
 
 h1 {
@@ -53,26 +53,26 @@ h1 {
   padding: 10vmin;
 }
 
-#intro {
+.intro {
   line-height: 1;
 }
 
-#hello {
+.hello {
   font-size: 60%;
 }
 
-h1 #name {
+h1 .name {
   line-height: 0;
 }
 
-#se {
+.se {
   color: #f1d8b4;
   text-shadow: 1px 0px 6px rgb(235, 178, 72);
   font-size: 70%;
   margin: -1vmin 0;
 }
 
-#and {
+.and {
   font-size: 60%;
 }
 
@@ -83,17 +83,17 @@ nav {
   top: 0;
   right: 0;
   z-index: 100;
-  background-color: #333;
+  background-color: #1F2326;
   height: 100vh;
   width: 7vw;
   letter-spacing: 1px;
-  border-bottom: #333 solid .5px;
+  border-bottom: #1F2326 solid .5px;
   margin: 0;
 }
 
 a {
   text-decoration: none;
-  color: gray;
+  color: #68727B;
   padding: 6vh 3vw;
 }
 
@@ -118,9 +118,15 @@ li {
 }
 
 li a:hover {
-  background-color: #222;
-  color: white;
+  background-color: #0c1113;
+  color: #698ea9;
   transition: all 0.5s ease;
+}
+
+/* Me Page */
+
+#about-me {
+  color: #906944;
 }
 
 /* SKILLS PAGE */
@@ -129,8 +135,9 @@ li a:hover {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   scroll-snap-align: start;
-  width: 80vw;
-  height: 100vh;
+  width: 100%;
+  color: #0c1113;
+  background-color: #698ea9;
 }
 
 /* PROJECTS PAGE */
@@ -139,4 +146,12 @@ li a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   scroll-snap-align: start;
+  color: #906944;
+}
+
+/* CONCTACT PAGE */
+
+#contact {
+  background-color: #698ea9;
+  color: #0c1113;
 }
