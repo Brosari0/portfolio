@@ -4,7 +4,6 @@ html {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  background-color: #0c1113;
 }
 
 body {
@@ -36,14 +35,14 @@ main {
   height: 100vh;
 }
 
-h1 {
+.intro-container {
   margin: 0;
   width: 100vw;
   height: 100vh;
   z-index: 2;
   color: #fff;
   font-family: 'Source Code Pro', monospace;
-  font-size: 400%;
+  font-size: 600%;
   font-weight: 600;
   text-align: left;
 }
@@ -57,7 +56,7 @@ h1 {
   font-size: 60%;
 }
 
-h1 .name {
+.name {
   line-height: 0;
 }
 
@@ -65,14 +64,19 @@ h1 .name {
   color: #f1d8b4;
   text-shadow: 1px 0px 6px rgb(235, 178, 72);
   font-size: 70%;
-  margin: -1vmin 0;
 }
 
 .and {
   font-size: 60%;
 }
 
-img {
+.about-me {
+  font-size: 22%;
+  width: 60vw;
+  margin: 1vmin;
+}
+
+.face {
   position: absolute;
   height: 60vh;
   width: auto;
@@ -111,6 +115,7 @@ ul {
   align-items: center;
   list-style: none;
   text-align: right;
+  font-size: large;
   padding: 0;
   width: 7vw;
   overflow: hidden;
@@ -127,29 +132,51 @@ li a:hover {
   transition: all 0.5s ease;
 }
 
-/* Me Page */
-
-#about-me {
-  color: #906944;
-}
-
 /* SKILLS PAGE */
 
 #skills {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
   scroll-snap-align: start;
   width: 100%;
   color: #0c1113;
-  background-color: #698ea9;
+  background: #0c1113;
+  background: linear-gradient(0deg, #0c1113 5%, #698ea9 50%,#f1d8b4 95%);
+}
+
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+}
+
+#skills img {
+  width: 22vmin;
+}
+
+.languages, .frameworks, .tools {
+  color: #698ea9;
+  font-size: 200%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c1113;
+  height: 50%;
+  border-radius: 10%;
 }
 
 /* PROJECTS PAGE */
+
+.p1 {
+  height: 25%;
+  width: 25%;
+}
 
 #projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
   scroll-snap-align: start;
+  background-color: #0c1113;
   color: #906944;
 }
 
