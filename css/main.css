@@ -30,9 +30,10 @@ main {
 
 #title {
   background-image: url("/background.jpg");
-  background-size: cover;
+  background-size: 110%;
   width: 93vw;
   height: 100vh;
+  margin-left: 7%;
 }
 
 .intro-container {
@@ -74,6 +75,7 @@ main {
   font-size: 22%;
   width: 60vw;
   margin: 1vmin;
+  pointer-events: none;
 }
 
 .face {
@@ -89,7 +91,7 @@ main {
 nav {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 100;
   background-color: #1F2326;
   height: 100vh;
@@ -147,29 +149,31 @@ li a:hover {
   align-items: center;
   justify-content: space-evenly;
   width: 90%;
+  height: 90%;
 }
 
 #skills img {
   width: 22vmin;
 }
 
-.languages, .frameworks, .tools {
+/* .languages, .frameworks, .tools {
   color: #698ea9;
   font-size: 200%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #0c1113;
   height: 50%;
   border-radius: 10%;
-}
+} */
 
 /* PROJECTS PAGE */
 
-.p1 {
-  height: 25%;
-  width: 25%;
+#projects {
+  width: 93vw;
+  margin-left: 7vw;
+}
+
+.sizing {
+  height: 95%;
+  width: 95%;
 }
 
 #projects {
@@ -180,7 +184,7 @@ li a:hover {
   color: #906944;
 }
 
-/* CONCTACT PAGE */
+/* CONTACT PAGE */
 
 #contact {
   background-color: #698ea9;
