@@ -19,7 +19,7 @@ main {
   overflow: auto;
 }
 
-[id] {
+#title, #skills, #projects, #contact {
   scroll-snap-align: start;
   scroll-margin: 0;
   height: 100vh;
@@ -138,7 +138,8 @@ li a:hover {
 
 #skills {
   scroll-snap-align: start;
-  width: 100%;
+  width: 93vw;
+  margin-left: 7vw;
   color: #0c1113;
   background: #0c1113;
   background: linear-gradient(0deg, #0c1113 5%, #698ea9 50%,#f1d8b4 95%);
@@ -155,14 +156,6 @@ li a:hover {
 #skills img {
   width: 22vmin;
 }
-
-/* .languages, .frameworks, .tools {
-  color: #698ea9;
-  font-size: 200%;
-  background-color: #0c1113;
-  height: 50%;
-  border-radius: 10%;
-} */
 
 /* PROJECTS PAGE */
 
