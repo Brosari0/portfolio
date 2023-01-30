@@ -180,6 +180,19 @@ li a:hover {
 /* CONTACT PAGE */
 
 #contact {
-  background-color: #698ea9;
+  display: flex;
+  flex-direction: column;
+  width: 93vw;
+  margin-left: 7vw;
+  background: #0c1113;
+  background: linear-gradient(0deg, #0c1113 5%, #698ea9 50%,#f1d8b4 95%);
   color: #0c1113;
+}
+
+#contact h3 {
+  padding: 9vh;
+}
+
+#contact a img {
+  height: 10vh;
 }
