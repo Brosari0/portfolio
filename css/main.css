@@ -31,7 +31,7 @@ main {
 #title {
   background: #0c1113;
   background: linear-gradient(0deg, #f1d8b4 5%, #698ea9 30%,#0c1113 75%);
-  background-image: url("/images/background.jpg");
+  /* background-image: url("/images/background.jpg"); */
   background-size: 110%;
   width: 93vw;
   height: 100vh;
