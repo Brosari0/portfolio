@@ -197,3 +197,13 @@ li a:hover {
 #contact a img {
   height: 10vh;
 }
+
+#contact a :hover {
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+}
+
+#contact a :active {
+  transform: scale(0.98);
+  opacity: .75;
+}
